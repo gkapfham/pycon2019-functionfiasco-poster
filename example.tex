@@ -62,7 +62,7 @@
 \maincolumn{
 %%%% Main space
 
-\textbf{Function-Fiasco}, an automatic detection tool, uncovers pseudo-tested methods in Python based systems.
+\textbf{Function-Fiasco} is an automatic tool that detects pseudo-tested methods in Python progams.
 }{
 %%%% Bottom space
 
@@ -91,11 +91,16 @@
 \author{Dr. Gregory Kapfhammer}
 
 \section{Introduction}
-Here is an itemised list:
+Size and complexity of modern Python programs:
 \begin{itemize}
-\item The first item.
-\item The second item.
-\item The third item.
+\item lack of types
+\end{itemize}
+Possible misleading nature of statement coverage:
+\begin{itemize}
+\item only what was executed
+\item doesn't factor in branches and iteration
+\item no information on data state
+\item quality of the oracle
 \end{itemize}
 
 \section{A Diagram}
