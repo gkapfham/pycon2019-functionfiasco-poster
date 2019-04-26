@@ -88,20 +88,15 @@
 
 \title{The Title}
 \author{Nicholas Tocci}
-\author{Dr. Gregory Kapfhammer}
+\author{Gregory Kapfhammer}
 
 \section{Introduction}
-Size and complexity of modern Python programs:
-\begin{itemize}
-\item lack of types
-\end{itemize}
-Possible misleading nature of statement coverage:
-\begin{itemize}
-\item only what was executed
-\item doesn't factor in branches and iteration
-\item no information on data state
-\item quality of the oracle
-\end{itemize}
+Software systems are very large and complex. Because of this, modern python
+programs are difficult to test due to the lack of type safety. Another concern is
+the possible misleading nature of statement coverage since it doesn't factor in
+branches and iteration, there is no information on the data state, and the quality
+of the oracle. Due to this, there is a potential chance for psuedo-tested methods
+to exist in python programs.
 
 \section{A Diagram}
 Here is a diagram:
