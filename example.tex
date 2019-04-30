@@ -15,10 +15,10 @@
 
 % Define block styles
 \tikzstyle{decision} = [diamond, draw, fill=blue!20,
-    text width=4.5em, text badly centered, node distance=10em, inner sep=0pt]
+    text width=4.5em, text badly centered, node distance=20em, inner sep=0pt]
 \tikzstyle{block} = [rectangle, draw, fill=blue!20,
     text width=6em, text centered, rounded corners, minimum height=4em, node distance = 10em]
-\tikzstyle{line} = [draw, -latex', line width=.25mm]
+\tikzstyle{line} = [draw, -latex', line width=.5mm]
 \tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=15em,
     minimum height=2em]
 
@@ -76,7 +76,7 @@
 \maincolumn{
 %%%% Main space
 
-\textbf{Function-Fiasco}, an automatic detection tool, uncovers pseudo-tested methods in Python based systems.
+\textbf{Function-Fiasco} is an automatic tool that detects pseudo-tested methods in Python progams.
 }{
 %%%% Bottom space
 
@@ -100,12 +100,12 @@
 }{
 %%%%%%%% LEFT COLUMN
 
-\title{Automatic Detection of Pseudo-tested Methods using Python and Pytest}
+\title{\fontsize{50}{60} \selectfont Automatic Detection of Pseudo-tested Methods using Python and Pytest}
 \author{Nicholas Tocci}
 \author{Gregory Kapfhammer}
 
 \section{Introduction}
-Software systems are very large and complex. Because of this, modern python
+Software systems are very large and complex. Due to this, modern python
 programs are difficult to test due to the lack of type safety. Another concern is
 the possible misleading nature of statement coverage since it doesn't factor in
 branches and iteration, there is no information on the data state, and the quality
