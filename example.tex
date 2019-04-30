@@ -7,7 +7,7 @@
 %%%% https://twitter.com/mikemorrison
 
 \documentclass[a0paper,fleqn]{betterposter}
-
+\usepackage{float}
 %%%% Uncomment the following commands to customise the format
 
 %% Setting the width of columns
@@ -118,17 +118,37 @@ If $f$ is continuous on the closed interval $[a,b]$ and $F$ is the indefinite in
 \vfill
 
 %% Institution logo
-\includegraphics[width=\textwidth]{img/logo}\\
-
+\center{
+\includegraphics[scale=.95]{img/CollegeLogo}\\
+}
 }{
 %%%%%%%% RIGHT COLUMN
 \section{Results}
+\include{table}
 
-\section{Conclusion}
-This is a great poster format!
+Function-Fiasco can successfully detect pseudo-tested methods in Python based systems.
 
 \section{Future Work}
+% Function-Fiasco will be updated to include further return types to fuzz. The purpose is to enhance its ability to detect pseudo-tested methods in systems with varying types of function returns.
+Function-Fiasco has many features that will be implemented which include:
+\begin{itemize}
+  \item{Further type fuzzing capability}
+  \item{Parameterized test observation}
+  \item{Further system evaluation}
+\end{itemize}
 
 
+\section{Conclusion}
+Pseudo-tested methods are an issue that exist in Python based systems. Function-Fiasco has the capability to detect such methods that may lead to unexpected issues.
+
+
+
+\section{Get Involved}
+If you would like to get involved, please feel free to enter bugs into the issue tracker on our github page, or submit a pull request to aid in the implementation.
+\vfill
+% \begin{figure}[b]
+\includegraphics[width=\textwidth]{img/ComputerScience-Stack}
+% \end{figure}
 }
+
 \end{document}
