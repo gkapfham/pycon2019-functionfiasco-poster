@@ -8,6 +8,20 @@
 
 \documentclass[a0paper,fleqn]{betterposter}
 
+\usepackage[latin1]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+
+
+% Define block styles
+\tikzstyle{decision} = [diamond, draw, fill=blue!20,
+    text width=4.5em, text badly centered, node distance=10em, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20,
+    text width=6em, text centered, rounded corners, minimum height=4em, node distance = 10em]
+\tikzstyle{line} = [draw, -latex', line width=.25mm]
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=15em,
+    minimum height=2em]
+
 %%%% Uncomment the following commands to customise the format
 
 %% Setting the width of columns
@@ -98,26 +112,14 @@ branches and iteration, there is no information on the data state, and the quali
 of the oracle. Due to this, there is a potential chance for psuedo-tested methods
 to exist in python programs.
 
-\section{A Diagram}
-Here is a diagram:
 \begin{center}
 % Linear regression
 % Author: Henri Menke
 % Retrieved from: http://www.texample.net/tikz/examples/linear-regression/
-\includegraphics[width=\textwidth]{img/tikzexample1}
+
+\include{flow}
 \end{center}
 
-\section{Fundamental Theorem\\of Calculus}
-If $f$ is continuous on the closed interval $[a,b]$ and $F$ is the indefinite integral of $f$ on $[a,b]$, then
-\begin{equation}
-\int_a^b f(x)\,\mathrm{d}x = F(b)-F(a).
-\end{equation}
-
-\section{Conclusion}
-This is a great poster format!
-
-%% This fills the space between the content and the logo
-\vfill
 
 %% Institution logo
 \includegraphics[width=\textwidth]{img/logo}\\
