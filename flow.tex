@@ -1,14 +1,14 @@
-\begin{tikzpicture}[auto, scale=4, every node/.style={scale=0.38}]
+\begin{tikzpicture}[auto, scale=5, every node/.style={scale=0.2}]
     \node [cloud] (sys) {System Begin};
-    \node [block, below of=sys, node distance=5em] (file) {File/Function Detection};
-    \node [block, below of=file] (Decorator) {Decorator Application for Current File};
+    \node [block, below of=sys, node distance=10em] (file) {File/Function Detection};
+    \node [block, below of=file, node distance=10em] (Decorator) {Decorator Application for Current File};
     \node [block, below of=Decorator] (pytest) {Pytest With Reloaded Modules and Metric Detection};
     \node [block, right of=pytest, node distance=10em] (choose) {Choose The Next Decorated Function};
     \node [block, left of=pytest] (Next) {Choose The Next Python File in the Input};
-    \node [decision, below of=pytest, node distance=10em] (function) {Last Function in File};
-    \node [decision, below of=function, node distance=10em] (Last) {Last File in the Input?};
+    \node [decision, below of=pytest, node distance=15em] (function) {Last Function in File};
+    \node [decision, below of=function, node distance=15em] (Last) {Last File in the Input?};
     \node [block, below of=Last, node distance=10em] (Metric) {Metric Analysis and output};
-    \node [cloud, below of=Metric, node distance=5em] (end) {System End};
+    \node [cloud, below of=Metric, node distance=10em] (end) {System End};
 
 
     \path [line] (sys) -- (file);
