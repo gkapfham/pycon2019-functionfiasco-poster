@@ -4,3 +4,4 @@
 *.fdb_latexmk
 *.aux
 *.pdf
+.DS_Store
