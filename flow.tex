@@ -18,7 +18,7 @@
     \path [line] (choose) -- (pytest);
     \path [line] (function) -| node [near start] {no} (choose);
     \path [line] (function) -- node [near start] {yes} (Last);
-    \path [line] (Last) -| node {no} (Next);
+    \path [line] (Last) -| node [near start] {no} (Next);
     \path [line] (Next) |- (file);
     \path [line] (Last) -- node {yes} (Metric);
     \path [line] (Metric) -- (end);
