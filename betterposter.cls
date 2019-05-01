@@ -17,7 +17,15 @@
 
 %% Paper size
 \RequirePackage{geometry}
-\geometry{a0paper}
+
+% This is the size defined in Saejin's template.
+% This is also the size mentioned at this web site:
+% https://us.pycon.org/2019/speaking/posters/
+%
+\geometry{papersize={36in,48in}}
+
+% This was the original size:
+% \geometry{a0paper}
 
 %% Paper orientation
 \geometry{landscape}
