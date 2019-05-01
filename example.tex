@@ -61,15 +61,12 @@ text width=6em, text centered, rounded corners, minimum height=4em, node distanc
 
 %% Changing colours
 % Background of side columns
-%\renewcommand{\columnbackgroundcolor}{black}
-% Font of side columns
-%\renewcommand{\columnfontcolor}{gray}
-% Background of main column
+%\renewcommand{\columnbackgroundcolor}{black} Font of side columns
+%\renewcommand{\columnfontcolor}{gray} Background of main column
 %\renewcommand{\maincolumnbackgroundcolor}{empirical}
 %\renewcommand{\maincolumnbackgroundcolor}{theory}
 %\renewcommand{\maincolumnbackgroundcolor}{methods}
-%\renewcommand{\maincolumnbackgroundcolor}{intervention}
-% Font of main column
+%\renewcommand{\maincolumnbackgroundcolor}{intervention} Font of main column
 %\renewcommand{\maincolumnfontcolor}{gray}
 
 \begin{document}
@@ -103,8 +100,7 @@ text width=6em, text centered, rounded corners, minimum height=4em, node distanc
 
     %% QR code
     %
-    \qrcode{img/qr_code}{img/smartphoneWhite}{
-      \textbf{Scan the QR Code} to
+    \qrcode{img/qr_code}{img/smartphoneWhite}{ \textbf{Scan the QR Code} to
       \\visit our GitHub project
 
     }
@@ -114,26 +110,26 @@ text width=6em, text centered, rounded corners, minimum height=4em, node distanc
   }{
   %%%%%%%% LEFT COLUMN
 
-  \title{\fontsize{50}{60}\selectfont Automatic Detection of Pseudo-tested Methods using Python and Pytest}
-  \author{Nicholas Tocci}
-  \author{Gregory Kapfhammer}
+  \title{\fontsize{50}{60}\selectfont Automatic Detection of Pseudo-tested
+  Methods using Python and Pytest} \author{Nicholas Tocci} \author{Gregory
+Kapfhammer}
 
   \section{Introduction}
-  Software systems are very large and complex. Due to this, modern Python
-  programs are difficult to test due to the lack of type safety. This could cause a psuedo-tested methods to exist in Python programs. A
-  psuedo-tested method is method that is tested, but which passes regardless of the
-  output of a function. Function-Fiasco helps determine how much of
-  the code is adequately tested and provides a metric that is more representative of
-  the actual conditions of the system.
+  %
+  Python programs are often complex and difficult to test.
+  %
+  Although useful, test coverage does not suitably signal adequacy.
+  %
+  A method $m$ is psuedo-tested if a test passes even when $m$ is not run.
+
+  \vspace*{.25in}
+
+  Since it may be time-consuming and error-prone to manually detect
+  psuedo-tested methods, Function-Fiasco can discover them automatically.
+
   \section{Implementation}
-  % Linear regression
-  % Author: Henri Menke
-  % Retrieved from: http://www.texample.net/tikz/examples/linear-regression/
 
-  \centering\nointerlineskip
-  \include{flow}
-
-  %% Institution logo
+  \centering\nointerlineskip \include{flow}
 
   }{
 
