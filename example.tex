@@ -106,10 +106,7 @@
 
 \section{Introduction}
 Software systems are very large and complex. Due to this, modern Python
-programs are difficult to test due to the lack of type safety. Another concern is
-the possible misleading nature of statement coverage since it doesn't factor in
-branches and iteration, there is no information on the data state, and the quality
-of the oracle. These factors can cause a psuedo-tested methods to exist in Python programs. A
+programs are difficult to test due to the lack of type safety. This could cause a psuedo-tested methods to exist in Python programs. A
 psuedo-tested method is method that is tested, but which passes regardless of the
 output of a function. Function-Fiasco helps determine how much of
 the code is adequately tested and provides a metric that is more representative of
@@ -121,7 +118,6 @@ the actual conditions of the system.
 
 \centering\nointerlineskip
 \include{flow}
-
 
 %% Institution logo
 
