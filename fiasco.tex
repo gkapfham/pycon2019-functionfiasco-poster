@@ -1,0 +1,10 @@
+\begin{tikzpicture}[auto, scale=.3, every node/.style={scale=.3}]
+    \node [block2] (Ti) {$T_{i}$};
+    \node [block2, right of=sys] (file) {$f$};
+    \node [block2, right of=file] (Func) {Function-Fiasco};
+    \node [block2, right of=Func] (Pass) {Pass/Fail};
+
+    \path [line] (Ti) -- (file);
+    \path [line] (file) -- (Func);
+    \path [line] (Func) -- (Pass);
+\end{tikzpicture}
