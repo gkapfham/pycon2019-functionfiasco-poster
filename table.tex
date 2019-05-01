@@ -1,3 +1,5 @@
+\renewcommand{\arraystretch}{1.2}
+
 \begin{table}[H]
 \centering
 
@@ -35,7 +37,7 @@
 
 % \end{tabular}
 
-\begin{tabular}{r|cccc}
+\begin{tabular}{rcccc}
   % \hline
 
   % OLD:
@@ -43,7 +45,7 @@
   %  \hline
 
   Program & Coverage & Total & Modified & Pseudo-Tested \\
-  \hline
+  \toprule
 
   % OLD:
   % 1 & Hashids-Python & 0.97 & 0.94 &  16 &  15 &  10 &  8 &   7 & 0.44 & 0.50 \\
@@ -51,6 +53,7 @@
   Hashids-Python & 97\% & 16 & 10 & 8 \\
 
   % 2 & Bleach & 0.48 & 0.41 & 368 & 152 &   8 &   2 & 150 & 0.41 & 0.00 \\
+  Bleach & 48\% & 368 & 8 & 2 \\
 
   % 3 & Pycco & 0.77 & 0.86 &  22 &  19 &   6 &   5 &  14 & 0.64 & 0.22 \\
 
