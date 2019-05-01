@@ -11,7 +11,7 @@
 \usepackage[latin1]{inputenc}
 \usepackage{tikz}
 \usetikzlibrary{shapes,arrows}
-
+\usetikzlibrary{arrows.meta}
 
 % Define block styles
 \tikzstyle{decision} = [diamond, draw, fill=blue!20,
@@ -72,13 +72,16 @@
 %\renewcommand{\maincolumnfontcolor}{gray}
 
 \begin{document}
+
 \betterposter{
+
 %%%%%%%% MAIN COLUMN
 
 \maincolumn{
+
 %%%% Main space
 
-\textbf{Function-Fiasco} is tool that automatically detects pseudo-tested
+\textbf{Function-Fiasco} is an automated tool that detects pseudo-tested
 methods in real Python programs.
 %
 \vfill
