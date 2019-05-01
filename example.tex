@@ -13,6 +13,7 @@
 \usepackage{booktabs}
 \usetikzlibrary{shapes,arrows}
 \usetikzlibrary{arrows.meta}
+\usepackage{enumitem}
 
 % Define block styles
 \tikzstyle{decision} = [diamond, draw, fill=blue!20,
@@ -112,6 +113,8 @@ text width=6em, text centered, rounded corners, minimum height=4em, node distanc
     Methods using Python and Pytest} \author{Nicholas Tocci} \author{Gregory
   Kapfhammer}
 
+  \vspace*{-.5in}
+
   \section{Introduction}
   %
   Python programs are often complex and difficult to test.
@@ -138,6 +141,27 @@ text width=6em, text centered, rounded corners, minimum height=4em, node distanc
     \item Instrumentation
 
   \end{itemize}
+
+  \vspace*{.5in}
+  %
+  Function-Fiasco performs these steps:
+
+  \begin{enumerate}[leftmargin=.5in]
+
+    \item Instrument all program methods
+    \item Elide execution of chosen method
+    \item Run the tests and observe behavior
+    \item Run steps (2) and (3) for all methods
+    \item Report the psuedo-tested methods
+
+  \end{enumerate}
+
+  \vspace*{.25in}
+  %
+  Optimized each step, ensuring that the tool scales to large Python programs.
+  %
+  \vspace*{.5in}
+  %
 
   %% This fills the space between the content and the logo
   \vfill
