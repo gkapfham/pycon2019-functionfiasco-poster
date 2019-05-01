@@ -15,15 +15,15 @@
 
 % Define block styles
 \tikzstyle{decision} = [diamond, draw, fill=blue!20,
-    text width=4.5em, text badly centered, node distance=25em, inner sep=0pt]
+text width=4.5em, text badly centered, node distance=25em, inner sep=0pt]
 \tikzstyle{block} = [rectangle, draw, fill=blue!20,
-    text width=6em, text centered, rounded corners, minimum height=4em, node distance = 15em]
+text width=6em, text centered, rounded corners, minimum height=4em, node distance = 15em]
 \tikzstyle{line} = [draw, -latex', line width=.5mm]
 \tikzstyle{line2} = [draw, -latex', line width=.7mm]
 \tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=20em,
-    minimum height=2em]
+minimum height=2em]
 \tikzstyle{block2} = [rectangle, draw, fill=white!20,
-    text width=6em, text centered, rounded corners, minimum height=4em, node distance = 10em, text=black]
+text width=6em, text centered, rounded corners, minimum height=4em, node distance = 10em, text=black]
 %%%% Uncomment the following commands to customise the format
 
 %% Setting the width of columns
@@ -75,118 +75,117 @@
 
 \betterposter{
 
-%%%%%%%% MAIN COLUMN
+  %%%%%%%% MAIN COLUMN
 
-\maincolumn{
+  \maincolumn{
 
-%%%% Main space
+    %%%% Main space
 
-\textbf{Function-Fiasco} is an automated tool that detects pseudo-tested
-methods in real Python programs.
-%
-\vfill
+    \textbf{Function-Fiasco} is an automated tool that detects pseudo-tested
+    methods in real Python programs.
+    %
+    \vfill
 
-\centering
-%
-\include{fiasco}
+    \vspace*{-.5in}
+    %
+    \include{fiasco}
+    %
+    \vspace*{-2.5in}
 
-}{
+    Does the status of $T_i$ change when Function-Fiasco does not run $m$?
+    %
+    \vspace*{-4.5in}
 
-%%%% Bottom space
+    }{
 
-%% QR code
-\qrcode{img/qr_code}{img/smartphoneWhite}{
-\textbf{Scan the QR Code} to
-\\visit our GitHub project
-}
-% Smartphone icon
-% Author: Freepik
-% Retrieved from: https://www.flaticon.com/free-icon/smartphone_65680
+    %%%% Bottom space
 
-%% Compact QR code (comment the previous command and uncomment this one to switch)
-%\compactqrcode{img/qrcode}{
-%\textbf{Take a picture} to
-%\\download the full paper
-%}
+    %% QR code
+    %
+    \qrcode{img/qr_code}{img/smartphoneWhite}{
+      \textbf{Scan the QR Code} to
+      \\visit our GitHub project
 
-}
+    }
 
-}{
-%%%%%%%% LEFT COLUMN
+  }
 
-\title{\fontsize{50}{60}\selectfont Automatic Detection of Pseudo-tested Methods using Python and Pytest}
-\author{Nicholas Tocci}
-\author{Gregory Kapfhammer}
+  }{
+  %%%%%%%% LEFT COLUMN
 
-\section{Introduction}
-Software systems are very large and complex. Due to this, modern Python
-programs are difficult to test due to the lack of type safety. This could cause a psuedo-tested methods to exist in Python programs. A
-psuedo-tested method is method that is tested, but which passes regardless of the
-output of a function. Function-Fiasco helps determine how much of
-the code is adequately tested and provides a metric that is more representative of
-the actual conditions of the system.
-\section{Implementation}
-% Linear regression
-% Author: Henri Menke
-% Retrieved from: http://www.texample.net/tikz/examples/linear-regression/
+  \title{\fontsize{50}{60}\selectfont Automatic Detection of Pseudo-tested Methods using Python and Pytest}
+  \author{Nicholas Tocci}
+  \author{Gregory Kapfhammer}
 
-\centering\nointerlineskip
-\include{flow}
+  \section{Introduction}
+  Software systems are very large and complex. Due to this, modern Python
+  programs are difficult to test due to the lack of type safety. This could cause a psuedo-tested methods to exist in Python programs. A
+  psuedo-tested method is method that is tested, but which passes regardless of the
+  output of a function. Function-Fiasco helps determine how much of
+  the code is adequately tested and provides a metric that is more representative of
+  the actual conditions of the system.
+  \section{Implementation}
+  % Linear regression
+  % Author: Henri Menke
+  % Retrieved from: http://www.texample.net/tikz/examples/linear-regression/
 
-%% Institution logo
+  \centering\nointerlineskip
+  \include{flow}
 
-}{
+  %% Institution logo
 
-%%%%%%%% RIGHT COLUMN
+  }{
 
-\section{Preliminary Results}
+  %%%%%%%% RIGHT COLUMN
 
-\include{table}
+  \section{Preliminary Results}
 
-Function-Fiasco has detected pseudo-tested methods in Python programs.
+  \include{table}
 
-\section{Future Work}
-%
-We plan to add new features to Function-Fiasco: \\
+  Function-Fiasco has detected pseudo-tested methods in Python programs.
 
-\begin{itemize}[leftmargin=*]
+  \section{Future Work}
+  %
+  We plan to add new features to Function-Fiasco: \\
 
-\item{Further type fuzzing capability}
-%
-\item{Parameterized test observation}
-%
-\item{Updated Coverage Types}
+  \begin{itemize}[leftmargin=*]
 
-\end{itemize}
+    \item{Further type fuzzing capability}
+      %
+    \item{Parameterized test observation}
+      %
+    \item{Updated Coverage Types}
 
-\vspace{1em}
-%
-Function-Fiasco will continue to test systems for pseudo-tested methods.
+  \end{itemize}
 
-\section{Conclusion}
-%
-Pseudo-tested methods exist in many real-world Python programs.
-%
-Function-Fiasco automatically detects these methods, saving time that can
-instead be devoted to improving test suites.
-%
-Available on GitHub, Function-Fiasco aids the implementation of high-quality
-Pytest suites and Python programs.
+  \vspace{1em}
+  %
+  Function-Fiasco will continue to test systems for pseudo-tested methods.
 
-\section{Get Involved}
-%
-If you would like support the development of Function-Fiasco, please raise issue
-on the tracker on or create a pull request to add a new feature or bug fix.
-%
-\vfill
+  \section{Conclusion}
+  %
+  Pseudo-tested methods exist in many real-world Python programs.
+  %
+  Function-Fiasco automatically detects these methods, saving time that can
+  instead be devoted to improving test suites.
+  %
+  Available on GitHub, Function-Fiasco aids the implementation of high-quality
+  Pytest suites and Python programs.
 
-\section{Acknowledgements}
-%
-Poster creation aided by Cory Wiard.\\
+  \section{Get Involved}
+  %
+  If you would like support the development of Function-Fiasco, please raise issue
+  on the tracker on or create a pull request to add a new feature or bug fix.
+  %
+  \vfill
 
-\vspace*{.5in}
+  \section{Acknowledgements}
+  %
+  Poster creation aided by Cory Wiard.\\
 
-\includegraphics[width=\textwidth]{img/ComputerScience-Stack}
+  \vspace*{.5in}
+
+  \includegraphics[width=\textwidth]{img/ComputerScience-Stack}
 
 }
 
