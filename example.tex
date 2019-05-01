@@ -15,14 +15,14 @@
 
 % Define block styles
 \tikzstyle{decision} = [diamond, draw, fill=blue!20,
-    text width=4.5em, text badly centered, node distance=20em, inner sep=0pt]
+    text width=4.5em, text badly centered, node distance=25em, inner sep=0pt]
 \tikzstyle{block} = [rectangle, draw, fill=blue!20,
-    text width=6em, text centered, rounded corners, minimum height=4em, node distance = 10em]
+    text width=6em, text centered, rounded corners, minimum height=4em, node distance = 15em]
 \tikzstyle{line} = [draw, -latex', line width=.5mm]
-\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=15em,
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=20em,
     minimum height=2em]
-    \tikzstyle{block2} = [rectangle, draw, fill=white!20,
-        text width=6em, text centered, rounded corners, minimum height=4em, node distance = 10em, text=black]
+\tikzstyle{block2} = [rectangle, draw, fill=white!20,
+    text width=6em, text centered, rounded corners, minimum height=4em, node distance = 10em, text=black]
 %%%% Uncomment the following commands to customise the format
 
 %% Setting the width of columns
@@ -109,26 +109,22 @@
 \author{Gregory Kapfhammer}
 
 \section{Introduction}
-Software systems are very large and complex. Due to this, modern python
-programs are difficult to test due to the lack of type safety. Another concern is
-the possible misleading nature of statement coverage since it doesn't factor in
-branches and iteration, there is no information on the data state, and the quality
-of the oracle. Due to this, there is a potential chance for psuedo-tested methods
-to exist in python programs.
-
-\begin{center}
+Software systems are very large and complex. Due to this, modern Python
+programs are difficult to test due to the lack of type safety. This could cause a psuedo-tested methods to exist in Python programs. A
+psuedo-tested method is method that is tested, but which passes regardless of the
+output of a function. Function-Fiasco helps determine how much of
+the code is adequately tested and provides a metric that is more representative of
+the actual conditions of the system.
+\section{Implementation}
 % Linear regression
 % Author: Henri Menke
 % Retrieved from: http://www.texample.net/tikz/examples/linear-regression/
 
+\centering\nointerlineskip
 \include{flow}
-\end{center}
-
 
 %% Institution logo
-\center{
-\includegraphics[scale=.95]{img/CollegeLogo}\\
-}
+
 }{
 %%%%%%%% RIGHT COLUMN
 \section{Preliminary Results}
