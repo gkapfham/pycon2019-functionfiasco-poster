@@ -21,7 +21,8 @@
 \tikzstyle{line} = [draw, -latex', line width=.5mm]
 \tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=20em,
     minimum height=2em]
-
+\tikzstyle{block2} = [rectangle, draw, fill=white!20,
+    text width=6em, text centered, rounded corners, minimum height=4em, node distance = 10em, text=black]
 %%%% Uncomment the following commands to customise the format
 
 %% Setting the width of columns
@@ -77,6 +78,9 @@
 %%%% Main space
 
 \textbf{Function-Fiasco} is an automatic tool that detects pseudo-tested methods in Python progams.
+\vfill
+\centering
+\include{fiasco}
 }{
 %%%% Bottom space
 
@@ -126,24 +130,25 @@ the actual conditions of the system.
 \section{Preliminary Results}
 \include{table}
 
-Function-Fiasco can successfully detect pseudo-tested methods in Python based systems.
+Function-Fiasco has detected pseudo-tested methods in Python programs.
 
 \section{Future Work}
 % Function-Fiasco will be updated to include further return types to fuzz. The purpose is to enhance its ability to detect pseudo-tested methods in systems with varying types of function returns.
-Function-Fiasco has many features that will be implemented which include:\\
+Function-Fiasco has many features that need implementation which include:\\
 \begin{itemize}[leftmargin=*]
 \item{Further type fuzzing capability}
 \item{Parameterized test observation}
-\item{Further system evaluation}
+\item{Updated Coverage Types}
 \end{itemize}
-
+\vspace{1em}
+Function-Fiasco will continue to test systems for pseudo-tested methods.
 
 \section{Conclusion}
-Pseudo-tested methods are an issue that exist in Python based systems. Function-Fiasco has the capability to detect such methods that may lead to unexpected issues. Function-Fiasco can aid in the implementation of Python systems.
+Pseudo-tested methods are an issue that exist in Python based systems. Function-Fiasco can detect such methods that may lead to unexpected issues. Function-Fiasco can aid in the implementation of Python systems.
 
 
 \section{Get Involved}
-If you would like to get involved, please feel free to enter bugs into the issue tracker on our GithHub page, or submit a pull request to aid in the implementation.
+If you would like to get involved, submit bugs to the issue tracker on our GithHub project, or submit a pull request to aid in the implementation.
 \vfill
 % \begin{figure}[b]
 
