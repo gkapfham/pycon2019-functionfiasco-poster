@@ -1,12 +1,17 @@
+\tikzstyle{thickWhite} = [thick, white, line width=10pt, -{Latex[length=.5in]}]
+
 \begin{tikzpicture}[auto, scale=.5, every node/.style={scale=.4}]
 
-    \node [block2] (Ti) {Test Case \\ $T_{i}$};
-    \node [block2, right of=sys] (file) {Method $m$};
-    \node [block2, right of=file] (Func) {Function-Fiasco};
-    \node [block2, right of=Func] (Pass) {Status of \\ $T_i$};
+  \node [block2] (Ti) {Test Case \\ \vspace*{-1in} $T_{i}$};
+  \node [block2, right of=sys] (file) {Method \\ \vspace*{-1in} $m$};
 
-    \path [line2] (Ti) -- (file);
-    \path [line2] (file) -- (Func);
-    \path [line2] (Func) -- (Pass);
+  \node [block2, right of=file] (Func) {Function- \\ \vspace*{-1in} Fiasco};
+  \node [block2, right of=Func] (Pass) {Status of \\ \vspace*{-1in} $T_i$};
+
+  \draw[thickWhite] (Ti) to (file);
+
+  % \path [line2] (Ti) -- (file);
+  \path [line2] (file) -- (Func);
+  \path [line2] (Func) -- (Pass);
 
 \end{tikzpicture}
