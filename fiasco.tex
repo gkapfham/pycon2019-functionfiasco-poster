@@ -9,8 +9,7 @@
   \node [block2, right of=Func] (Pass) {Status of \\ \vspace*{-1in} $T_i$};
 
   \draw[thickWhite] (Ti) to (file);
-
-  \path [line2] (file) -- (Func);
-  \path [line2] (Func) -- (Pass);
+  \draw[thickWhite] (file) to (Func);
+  \draw[thickWhite] (Func) to (Pass);
 
 \end{tikzpicture}
