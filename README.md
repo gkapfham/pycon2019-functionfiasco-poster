@@ -1,6 +1,6 @@
-# pycon2019-gatorgrouper-poster
+# pycon2019-functionfiasco-poster
 
-![Sample of the PyCon 2019 Poster](gatorgrouper-poster-pycon2019.png)
+![Sample of the PyCon 2019 Poster](functionfiasco-poster-pycon2019.png)
 
 This repository contains the LaTeX source code and additional resources for a
 poster that [Gregory M. Kapfhammer](https://www.gregorykapfhammer.com/), with
@@ -16,15 +16,15 @@ example useful, could I trouble you to star this repository?
 You can type the following command if you want to clone this repository:
 
 ```shell
-git clone https://github.com/gkapfham/pycon2019-gatorgrouper-poster.git
+git clone https://github.com/gkapfham/pycon2019-functionfiasco-poster.git
 ```
 
 Then, if you want to compile the presentation to a PDF, you should type the
 following commands.
 
 ```shell
-cd pycon2019-gatorgrouper-poster
-pdflatex gatorgrouper-poster-pycon2019.tex
+cd pycon2019-functionfiasco-poster
+pdflatex functionfiasco-poster-pycon2019.tex
 ```
 
 You can also compile the paper using other LaTeX development tools, such as
